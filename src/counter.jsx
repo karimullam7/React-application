@@ -6,3 +6,6 @@ function Abc(){
 
     </div>
 }
+
+
+export default Abc;

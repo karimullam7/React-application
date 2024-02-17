@@ -1,34 +1,78 @@
-/* .main {
-  color: antiquewhite;
-} */
-.sub{
- 
-display: flex;
-text-align: center;
-
-}
-
-.ul{
+.li{
   list-style-type: none;
-  border: 1px solid;
-  width: auto;
-  height: auto;
-  padding: 30px 10px;
-}
-.img{
-  width: 110px;
-  height: 130px;
-  border-radius: 50%;
-
-}
-.sub1{
+  width: 600px;
+  height: 400px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow:  3px 3px 10px rgb(216, 224, 226);
+  border-radius: 5px;
 }
-.name{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.spb{
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  
 }
 
-.name1{
-  color: skyblue;
+.img{
+  width: 130px;
+  height: 140px;
+  border-radius: 50%;
+  box-shadow: 8px 3px rgb(125, 213, 245);
+}
+.a{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 1000;
+margin: 10px;
+
+
+}
+.b{
+  color: rgb(41, 163, 219);
+  text-transform: uppercase;
+  margin: 10px; 
+}
+
+.c{
+  text-align: justify;
+}
+
+
+.main {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100vh; /* Set height to viewport height for vertical centering */
+
+}
+
+/* Additional styling for other elements */
+
+.sub {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px; /* Adjust margin as needed */
+  
+}
+
+.sub1{
+  border-bottom: 5px solid white
+  
+}
+.main{
+  background-color: rgb(189, 188, 188);
+}
+
+.bia,
+.bib {
+  font-size: 22px; /* Adjust the size as needed */
 }

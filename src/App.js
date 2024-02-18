@@ -4,7 +4,7 @@ import Imageslide from './carosal';
 
 function App() {
   return (
-    <div className="App">
+    <div cllassName="App">
      <Imageslide/>
     </div>
   );

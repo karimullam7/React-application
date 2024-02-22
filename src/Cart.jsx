@@ -43,7 +43,7 @@ setCart([...temp])
           return (
             <div className="d-flex justify-content-around align-items-center  p-3  rounded shadow">
                 <img className="rounded" width={100} src={a.thumbnail} />
-                <b>{a.title}</b>
+                <div className="w"><b>{a.title}</b></div>
                 <b>Price : ${a.price}</b>
                  <div>
                  <button  onClick={()=>{incQut(a)}} className="btn btn-warning"> + </button>

@@ -1,4 +1,27 @@
 .shadow{
-  background-color: rgb(196, 240, 225);
+  background-color: rgb(180, 241, 221);
+/* background: linear-gradient( to left, skyblue, pink); */
   margin: 15px;
+}
+
+.text-center{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 10px 5px 5px black;
+  font-size: 90px;
+}
+
+.w{
+  width: 20%;
+  /* color: white; */
+  font-size: 20px;
+  
+}
+
+.shadow{
+  box-shadow: 10px 10px 10px gray;
+
+}
+img{
+  filter:drop-shadow(10px 7px 20px rgb(255, 255, 255));
+  /* box-shadow: 10px 7px 20px rgb(194, 62, 22); */
 }

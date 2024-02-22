@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 
 function Counter(){
 
@@ -12,12 +13,13 @@ function Counter(){
     function dec(){
         setCount(c-1)
     }
+   
 
-    return <div>
-        <h1>counter:{c}</h1>
+    return <div className="App">
+        <h1>Counter: {c}</h1>
         <button onClick={inc}>Inc</button>
         <button onClick={dec}>Dec</button>
     </div>
 }
 
-export default Counter;
+export default React.memo(Counter);

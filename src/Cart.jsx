@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Cartitem from "./cartitem";
 
 function Cartsample() {
   var [cart, setCart] = React.useState([]);
+  var [isLoading, setisLoading] = React.useState(true);
+
 
   React.useEffect(() => {
     axios.get("https://dummyjson.com/carts").then((res) => {
       setCart([...res.data.carts[0].products]);
+      setisLoading(false)
     });
   }, []);
 
@@ -37,24 +41,16 @@ setCart([...temp])
   }
   return (
     <div className="main">
+{
+  isLoading && (<div class="spinner-border text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>)
+}
+
       <h1 className="text-center text-warning">Shopping Cart</h1>
       <div>
 {cart.map((a) => {
-          return (
-            <div className="d-flex justify-content-around align-items-center  p-3  rounded shadow">
-                <img className="rounded" width={100} src={a.thumbnail} />
-                <div className="w"><b>{a.title}</b></div>
-                <b>Price : ${a.price}</b>
-                 <div>
-                 <button  onClick={()=>{incQut(a)}} className="btn btn-warning"> + </button>
-                  <b>&nbsp; {a.quantity} &nbsp;</b>
-                  <button onClick={()=>{decQut(a)}} className="btn btn-primary"> - </button>
-                 
-                 </div>
-                  <b>Each Qty Total   {a.price * a.quantity}</b>                
-
-            </div>
-          );
+          return <Cartitem  a={a}  incQut={incQut} decQut={decQut} />
         })}
 
         <h1 className="classTotal">

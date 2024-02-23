@@ -1,12 +1,11 @@
+import { Outlet } from 'react-router-dom';
 import './App.css';
-import KarimZan from './shopcart';
-
-
+import KarimZan from './shopcart'; 
 function App() {
   return (
     <div className="App">
-      <KarimZan/>
-     hai
+      
+     <Outlet></Outlet>
 
     </div>
   );

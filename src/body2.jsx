@@ -27,7 +27,7 @@ function Body2(){
                     <p className="p">Whether you are aspiring to be a web developer, app creator, or software engineer, these 
                         eight beginner-friendly tips will help you 
                         grasp the fundamentals of programming logic and set you on the path to becoming a skilled programmer. </p>
-                    <h4 className="h">How to get a job</h4>
+                    <h4 className="h">How to crack Interview</h4>
                     <p className="p">To successfully get a job, you'll need to have the appropriate skills, work experience, personal branding, and qualifications to make it. 
                         Employers and recruiters are actively looking for top talent that can stand out in a tough job market.</p>
                     <h4 className="h">Quick Start</h4>

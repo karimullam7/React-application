@@ -21,14 +21,15 @@ function Body() {
         </div>
       </div>
             <div className="d-flex height">
-                <div className="w-75">
-                    <div className="im"><img className="a" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYnfnOSnkXghbjgXZ0lhiSbGUjiI5HzSJWNQ&usqp=CAU"/></div>
-                    <div className="im"> <img className="a" src="https://thumbs.wbm.im/pw/medium/f5e75394f88e25cb4ddf9fd95f512ed7.avif"/></div>
-                    <div className="im"> <img className="a"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4GmO473O69vIttb17pYCbG3susi8_8O3jNA&usqp=CAU"/></div>
-                    <div className="im"> <img className="a" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHRAMn9piKDa8ovDKSE_hm3cQIhcMl80B0xQ&usqp=CAU"/> </div> 
+                <div className=" wdinc">
+                    <div className="im  div1"><img className="a" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYnfnOSnkXghbjgXZ0lhiSbGUjiI5HzSJWNQ&usqp=CAU"/>
+                    <p className="para">Confusion is part of programming Not in Edupoly</p></div>
+                    <div className="im div1"> <p className="para ">Computers are fast - developers keep them slow - Edupoly will help</p><img className="a" src="https://thumbs.wbm.im/pw/medium/f5e75394f88e25cb4ddf9fd95f512ed7.avif"/></div>
+                    <div className="im div1" > <img className="a" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHRAMn9piKDa8ovDKSE_hm3cQIhcMl80B0xQ&usqp=CAU"/><p className="para">There is no more bugs to fix Once Edupoly is enter</p></div>
+                    <div className="im div1"> <p className="para">Lest Join and build your Career  Edupoly Always welcome...</p><img className="a" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4GmO473O69vIttb17pYCbG3susi8_8O3jNA&usqp=CAU"/> </div> 
                 </div>
-                <div className="w-25">
-                    <h1>karim</h1>
+                <div >
+                    {/* <h1>karim</h1> */}
                 </div>
                 
             </div>

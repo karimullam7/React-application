@@ -16,20 +16,22 @@
 .web{
   margin-left: 8%;
 margin-top: 15px;
+margin-bottom: 20px;
 
 }
 
 .bd{
   height: 450px;
-  background-color: rgb(240, 240, 94);
+  background-color: rgb(247, 247, 78);
   margin-left: 6px;
   
 }
 
 .subweb{
-  width: 45%;
+  width: 84%;
   height: 250px;
   background-color: white;
+ 
   margin-left: 8%;
   padding: 20px;
   margin-top: 10px;
@@ -48,6 +50,30 @@ margin-top: 15px;
 .im{
   width: 75%;
   /* border: 1px solid; */
+}
+
+.para{
+  width: 250px;
+  /* border:1px solid; */
+  border-radius: 5px;
+  margin: 25px;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgb(104, 99, 99);
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(16, 122, 243);
+  font-weight: 700;
+
+
+}
+
+.wdinc{
+  width: 80%;
+}
+.div1{
+  display: flex;
 }
 .k{
   margin-right: 50px;
@@ -86,7 +112,7 @@ margin-top: 15px;
 
 .mh{
   margin-bottom: 30px;
-  margin-top: 70px;
+  margin-top: 100px;
   margin-left: 36%;
   border-radius: 5px ;
   box-shadow: 3px 3px 10px rgb(155, 145, 145);
@@ -125,5 +151,6 @@ padding: 15px;
 }
 
 .height{
+  margin-left: 70px;
   height: 500px;
 }

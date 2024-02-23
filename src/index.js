@@ -5,10 +5,29 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css'
 
+import {
+    createBrowserRouter,
+    RouterProvider,
+  } from "react-router-dom";
+import Counter from './Counter';
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <App/>,
+      children:[
+        {
+            path:'/',
+            element:<Counter/>
+        }
+      ]
+    },
+  ]);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
-    <App />
+    <RouterProvider router={router} />
  
 );
 

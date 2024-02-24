@@ -23,7 +23,8 @@ margin-bottom: 20px;
 .bd{
   height: 450px;
   background-color: rgb(247, 247, 78);
-  margin-left: 6px;
+ margin: 5px;
+ margin-right: 20px;
   
 }
 
@@ -49,13 +50,13 @@ margin-bottom: 20px;
 }
 .im{
   width: 75%;
-  /* border: 1px solid; */
+
 }
 
 .para{
   width: 250px;
   /* border:1px solid; */
-  border-radius: 5px;
+  border-radius: 9px;
   margin: 25px;
   text-align: center;
   box-shadow: 3px 3px 10px rgb(104, 99, 99);
@@ -70,7 +71,8 @@ margin-bottom: 20px;
 }
 
 .wdinc{
-  width: 80%;
+  /* border: 1px solid; */
+  width: 60%;
 }
 .div1{
   display: flex;
@@ -108,7 +110,6 @@ margin-bottom: 20px;
   gap: 50px;
 }
 
-/* body2 */
 
 .mh{
   margin-bottom: 30px;
@@ -116,8 +117,9 @@ margin-bottom: 20px;
   margin-left: 36%;
   border-radius: 5px ;
   box-shadow: 3px 3px 10px rgb(155, 145, 145);
-  color: rgb(255, 208, 0);
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  color: rgb(51, 255, 0);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 
 }
 .htmljstext{
@@ -133,8 +135,7 @@ padding: 15px;
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
-
-
+  border-radius: 10px;
 }
 
 .h{
@@ -145,12 +146,21 @@ padding: 15px;
 }
 .benfts{
   color: rgb(255, 255, 255);
-  background-color: rgb(226, 100, 16);
+  background-color: rgb(243, 136, 64);
   border-radius: 5px;
   padding: 2px;
 }
 
-.height{
-  margin-left: 70px;
-  height: 500px;
+.sideimg{
+  /* border: 1px solid; */
+  width: 40%;
 }
+.sdmg{
+width: 500px;
+border-radius: 7px;
+
+
+
+}
+
+

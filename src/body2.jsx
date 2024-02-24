@@ -4,7 +4,7 @@ function Body2(){
     return <div>
          <div className="mh d-flex justify-content-center  w-25">
          <i class="bi bi-stars"></i>
-        <h1>Courses Offered</h1>
+        <h1><b>Courses Offered</b></h1>
         <i class="bi bi-stars"></i>
       </div>
         <div className="htmljstext"> 

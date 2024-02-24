@@ -20,7 +20,8 @@ function Body() {
           <span> English,Telugu,Hindi</span>
         </div>
       </div>
-            <div className="d-flex height">
+            {/* <div className="d-flex height"> */}
+            <div className="d-flex align-items-center">
                 <div className=" wdinc">
                     <div className="im  div1"><img className="a" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYnfnOSnkXghbjgXZ0lhiSbGUjiI5HzSJWNQ&usqp=CAU"/>
                     <p className="para">Confusion is part of programming Not in Edupoly</p></div>
@@ -28,8 +29,8 @@ function Body() {
                     <div className="im div1" > <img className="a" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHRAMn9piKDa8ovDKSE_hm3cQIhcMl80B0xQ&usqp=CAU"/><p className="para">There is no more bugs to fix Once Edupoly is enter</p></div>
                     <div className="im div1"> <p className="para">Lest Join and build your Career  Edupoly Always welcome...</p><img className="a" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4GmO473O69vIttb17pYCbG3susi8_8O3jNA&usqp=CAU"/> </div> 
                 </div>
-                <div >
-                    {/* <h1>karim</h1> */}
+                <div className="sideimg">
+                    <img className="sdmg" src="https://t4.ftcdn.net/jpg/02/39/97/31/360_F_239973168_THApLcIPF6hu7ElDjH74MA5M9qr7MePg.webp" alt="" />
                 </div>
                 
             </div>

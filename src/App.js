@@ -1,4 +1,5 @@
 import './App.css';
+
 import Body from './body';
 import Body2 from './body2';
 import Footer from './footer';
@@ -11,6 +12,7 @@ function App() {
       <Body/>
       <Body2/>
       <Footer/>
+
     </div>
   );
 }

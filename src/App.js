@@ -1,11 +1,14 @@
-import { Outlet } from 'react-router-dom';
+import {Outlet, Link} from 'react-router-dom';
+
 import './App.css';
-import KarimZan from './shopcart'; 
 function App() {
   return (
     <div className="App">
-      
-     <Outlet></Outlet>
+      <h1>Routing chestunna</h1>
+      <Link to="/Counter"> cc</Link> <br/>
+      <Link to="/todo">tt</Link>
+      <Outlet/>
+
 
     </div>
   );

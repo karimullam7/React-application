@@ -4,25 +4,27 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css'
+import { createBrowserRouter, RouterProvider, } from "react-router-dom";    
 
-import {
-    createBrowserRouter,
-    RouterProvider,
-  } from "react-router-dom";
 import Counter from './Counter';
+import TodoList from './todo';
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <App/>,
-      children:[
-        {
-            path:'/',
-            element:<Counter/>
-        }
-      ]
-    },
-  ]);
+const router=  createBrowserRouter([
+  {
+    path:"/",
+    element: <App/>,
+    children:[
+      {
+        path:"/Counter",
+        element:<Counter/>
+      },
+      {
+        path:'/todo',
+        element:<TodoList/>
+      }
+    ]
+  } 
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -9,6 +9,8 @@ function Cartsample() {
 
   React.useEffect(() => {
     axios.get("https://dummyjson.com/carts").then((res) => {
+
+      console.log(res,'--starl');
       setCart([...res.data.carts[0].products]);
       setisLoading(false)
     });

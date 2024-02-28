@@ -1,6 +1,6 @@
 import './App.css';
 import Cartsample from './Cart';
-import Prods from './products';
+// import Prods from './products/';
 
 function App() {
   return (

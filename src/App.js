@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { Provider } from 'react-redux';
+import store from './Store/store';
+import Students from './components/Students';
+import Counter from './components/Counters';
+import Todo from './components/Todos';
+import Countries from './components/countries';
+import React from 'react';
 
 function App() {
+
+  React.useEffect(()=>{
+    fetch("https://restcountries.com/v2/all").then(res=>res.json()).then(countries=>{console.log(countries)})
+  },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div  className='bt'>
+        <h1>Welcome to Redux</h1>
+        <Students/>
+        <Counter/>
+        <Todo/>
+        <Countries/>
+      </div>
+    </Provider>
   );
 }
 

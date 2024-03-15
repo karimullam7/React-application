@@ -9,9 +9,7 @@ import React from 'react';
 
 function App() {
 
-  React.useEffect(()=>{
-    fetch("https://restcountries.com/v2/all").then(res=>res.json()).then(countries=>{console.log(countries)})
-  },[])
+  
   return (
     <Provider store={store}>
       <div  className='bt'>

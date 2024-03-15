@@ -6,3 +6,10 @@ export function addTodo(task){
 export function deleteTodo(index){
     return {type:DELTASK, payload:index}
 }
+export function getCountries(){
+   return (dispatch)=>{
+    fetch("https://restcountries.com/v2/all")
+    .then(res=>res.json())
+    .then(countries=>{dispatch ({type:"UPDATECOUNTRIES", payload:countries})})    
+   }
+}

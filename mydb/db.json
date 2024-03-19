@@ -1,0 +1,49 @@
+{
+  "books": [
+    {
+      "id": "3",
+      "title": "Rush",
+      "views": "1829"
+    },
+    {
+      "id": "43d3",
+      "title": "shdasduwdu",
+      "views": "22222"
+    },
+    {
+      "id": "975d",
+      "title": "Legend",
+      "views": "369"
+    },
+    {
+      "id": "f409",
+      "title": "karim",
+      "views": "7777"
+    },
+    {
+      "id": "c6a5",
+      "title": "ppppppp",
+      "views": "0125"
+    },
+    {
+      "id": "86d1",
+      "title": "hai",
+      "views": "111"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

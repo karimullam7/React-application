@@ -28,7 +28,38 @@
     font-size: 5em;
 }
 
-/* .login{
+.Reg{
+    height: 50vh;
+    width: 30vw;
     border: 1px solid;
     border-radius: 5px;
-} */
+}
+
+.login{
+    margin: 0 auto;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(168, 166, 166);
+}
+
+.registartion{
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(168, 166, 166);
+}
+
+.md{
+    color: red;
+}
+
+.kk{
+    width: 30vw;
+}

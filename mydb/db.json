@@ -1,7 +1,34 @@
 {
-    "Login": [
-        {
-            
-        }
-    ]
+  "Login": [
+    {}
+  ],
+  "Register": [
+    {
+      "id": "eec8",
+      "fullName": "karim",
+      "number": "789",
+      "email": "karimulla53@gmail.com",
+      "age": "28",
+      "password": "123",
+      "confirmpassword": "456"
+    },
+    {
+      "id": "de9c",
+      "fullName": "jasim",
+      "number": "123",
+      "email": "karimulla53@gmail.com",
+      "age": "21",
+      "password": "2569",
+      "confirmpassword": "648949"
+    },
+    {
+      "id": "bb8e",
+      "fullName": "sravani",
+      "number": "123",
+      "email": "sravani@gmail.com",
+      "age": "21",
+      "password": "143143",
+      "confirmpassword": "143143"
+    }
+  ]
 }

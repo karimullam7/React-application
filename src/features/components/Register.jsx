@@ -54,39 +54,40 @@ function Register() {
       <h1>Register Form</h1>
       <form onSubmit={formik.handleSubmit}>
         <div className='form-floating kk'>
-          <input  className='form-control '  placeholder='Enter FullName' type="text" name='fullName' onChange={formik.handleChange} onBlur={formik.handleBlur} /> <br />
-          <label  >FullName</label>
-        <i className='md'>{formik.touched.fullName &&   formik.errors.fullName}</i>
+          <input  className='form-control '  placeholder='Enter FullName' type="text" name='fullName' onChange={formik.handleChange} onBlur={formik.handleBlur} />
+          <label  >FullName</label> 
+        <i className='md'>{formik.touched.fullName &&   formik.errors.fullName}</i><br />
         </div>
 
         <div className='form-floating'>
-          <input className='form-control' placeholder='Enter Number' type="text" name='number' onChange={formik.handleChange} onBlur={formik.handleBlur}  /><br />
+          <input className='form-control' placeholder='Enter Number' type="text" name='number' onChange={formik.handleChange} onBlur={formik.handleBlur}  />
           <label >Number</label>
-          <i className='md'>{formik.touched.number && formik.errors.number}</i>
+          
+          <i className='md'>{formik.touched.number && formik.errors.number}</i><br />
         </div>
 
         <div className='form-floating'>
-          <input className='form-control' placeholder='Enter Email' type="text" name='email' onChange={formik.handleChange} onBlur={formik.handleBlur}  /><br />
-          <label >Email</label>
-          <i className='md'>{formik.touched.email && formik.errors.email}</i>
+          <input className='form-control' placeholder='Enter Email' type="text" name='email' onChange={formik.handleChange} onBlur={formik.handleBlur}  />
+          <label >Email</label> 
+          <i className='md'>{formik.touched.email && formik.errors.email}</i><br />
         </div>
 
         <div className='form-floating'>
-          <input className='form-control' placeholder='Enter age' type="text" name='age' onChange={formik.handleChange} onBlur={formik.handleBlur}  /><br />
-          <label >Age</label>
-          <i className='md'>{formik.touched.age && formik.errors.age}</i>
+          <input className='form-control' placeholder='Enter age' type="text" name='age' onChange={formik.handleChange} onBlur={formik.handleBlur}  />
+          <label >Age</label> 
+          <i className='md'>{formik.touched.age && formik.errors.age}</i><br />
         </div>
 
         <div className='form-floating'>
-          <input className='form-control' placeholder='Enter Password' type="password" name='password' onChange={formik.handleChange} onBlur={formik.handleBlur}  /><br />
-          <label >Password</label>
-          <i className='md'>{formik.touched.password && formik.errors.password}</i>
+          <input className='form-control' placeholder='Enter Password' type="password" name='password' onChange={formik.handleChange} onBlur={formik.handleBlur}  />
+          <label >Password</label> 
+          <i className='md'>{formik.touched.password && formik.errors.password}</i><br />
         </div>
 
         <div className='form-floating'>
-          <input className='form-control' placeholder='Enter confirmpassword' type="password" name='confirmpassword' onChange={formik.handleChange} onBlur={formik.handleBlur}  /><br />
-          <label >Confirm Password</label>
-          <i className='md'>{formik.touched.confirmpassword && formik.errors.confirmpassword}</i>
+          <input className='form-control' placeholder='Enter confirmpassword' type="password" name='confirmpassword' onChange={formik.handleChange} onBlur={formik.handleBlur}  />
+          <label >Confirm Password</label> 
+          <i className='md'>{formik.touched.confirmpassword && formik.errors.confirmpassword}</i><br />
         </div>
 
         <button type='submit' className='btn btn-primary'  >Create Account</button>

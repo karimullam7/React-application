@@ -14,7 +14,19 @@ export const Api = createApi({
         body: newReg
       }
     }
-   })
+   }),
+   enteringLogDetails: builder.mutation({
+    query:(newLog)=>{
+      return {
+        method:'POST',
+        url: 'Login',
+        body: newLog
+      }
+    }
+   }),
+
+
+
 
   }),
 })
@@ -22,4 +34,4 @@ export const Api = createApi({
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
 
-export const { useEnteringRegDetailsMutation } = Api
+export const { useEnteringRegDetailsMutation, useEnteringLogDetailsMutation } = Api

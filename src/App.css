@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primaryColor: #af9a7d;
+    --mainWhite: #fff;
+    --offWhite: #f7f7f7;
+    --mainBlack: #222;
+    --mainGrey: #ececec;
+    --darkGrey: #cfcfcf;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 4px;
+    --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+/* Global*/
+
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem 2rem;
+  background: var(--offWhite);
+  z-index: 1;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.nav-icon {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+  list-style-type: none;
+}
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: var(--mainSpacing);
+}
+.nav-links a:hover {
+  color: var(--primaryColor);
+}
+
+.show-nav {
+  height: 100px;
+  }
+/* End Of nav */
+  /* Hero */
+
+  .defaultHero , 
+  .roomsHero {
+    min-height: calc(100vh - 66px);
+    background: url('./images/defaultBcg.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+
+  .roomsHero{
+    background: url('./images/room-2.jpeg');
+    min-height:  calc(66vh);
+  }
+
+  .banner{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--mainWhite);  
+    padding: 2rem 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing); 
+    width: 50%; 
+    /* height: 40vh;   */
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner div {
+    width: 10rem;
+    height: 5px;
+    background: var(--primaryColor);
+    margin: 1.7rem auto;
+  }
+
+  .banner p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }

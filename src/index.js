@@ -3,22 +3,39 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router} from 'react-router-dom';
+// import { BrowserRouter as Router} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, } from "react-router-dom";  
+import Home from './pages/Home';
+import Rooms from './pages/Rooms';
+// import SingleRoom from './pages/SingleRoom';
+
+const router=  createBrowserRouter([
+  {
+    path:"/",
+    element: <App/>,
+    children:[
+      {
+        path:"/",
+        element:<Home/>
+      },
+      {
+        path:'/rooms',
+        element:<Rooms/>
+      }
+    ]
+  } 
+])
 
 
-ReactDOM.render(
-    <Router>
-        <App/>
-    </Router>,
-    document.getElementById("root")
-)
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
+    <RouterProvider router={router} />
  
-    <App />
-
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

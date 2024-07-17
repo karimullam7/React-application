@@ -14,8 +14,8 @@ function Counter(props){
     }
 
     return (
-        <div className="bt">
-            <h1>count:{props.counter.count}</h1>
+        <div className="bt cc">
+            <h1>count Entha:{props.counter.count}</h1>
             <button onClick={inc}>Increment</button>&nbsp;&nbsp;&nbsp;
             <button onClick={dec}>Decrement</button>&nbsp;&nbsp;&nbsp;
             <button onClick={reset} >Reset</button>&nbsp;&nbsp;&nbsp;

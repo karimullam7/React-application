@@ -7,6 +7,7 @@ import Todo from './components/Todos';
 import Countries from './components/countries';
 import React from 'react';
 
+import Karimcounter from "./components/Karimcounter"
 function App() {
 
   
@@ -14,10 +15,12 @@ function App() {
     <Provider store={store}>
       <div  className='bt'>
         <h1>Welcome to Redux</h1>
-        <Students/>
+        <Karimcounter/>
+        {/* <Students/>
         <Counter/>
-        <Todo/>
-        <Countries/>
+        <Todo/> */}
+        {/* <Countries/> */}
+        
       </div>
     </Provider>
   );

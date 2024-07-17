@@ -1,25 +1,22 @@
+import { Outlet } from 'react-router-dom';
 import './App.css';
-import { Provider } from 'react-redux';
-import store from './Store/store';
-import Students from './components/Students';
-import Counter from './components/Counters';
-import Todo from './components/Todos';
-import Countries from './components/countries';
 import React from 'react';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
 
   
   return (
-    <Provider store={store}>
-      <div  className='bt'>
-        <h1>Welcome to Redux</h1>
-        <Students/>
-        <Counter/>
-        <Todo/>
-        <Countries/>
-      </div>
-    </Provider>
+    
+      <main >
+        <Header/>
+        <div className='pt-16'>
+        <Outlet/>
+        </div>
+        <Footer/>
+      </main>
+    
   );
 }
 

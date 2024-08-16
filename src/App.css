@@ -13,6 +13,26 @@
   }
 }
 
+.head{
+  width: 500px;
+  height: 200px;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: #61dafb;
+}
+
+.dash{
+  width: 500px;
+  height: 370px;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: #f2f54c;
+}
+
+.sing{
+  background-color: bisque;
+  
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

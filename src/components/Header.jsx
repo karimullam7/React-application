@@ -5,14 +5,17 @@ import userIcon from "../assets/user.png"
 import { IoSearchOutline } from "react-icons/io5";
 import { navigation } from "../contants/navigation";
 
+
 const Header = () => {
 
   const [searchInput, seSearchInput] = useState("")
   const navigate= useNavigate()
 
   useEffect(()=>{
+    if(searchInput){
       navigate(`/search?q=${searchInput}`)
-  },[searchInput])
+    }
+  },[searchInput, navigate])
 
   const handleSubmit = (e) => {
     e.preventDefault()

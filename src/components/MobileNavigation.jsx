@@ -5,12 +5,13 @@ import { NavLink } from 'react-router-dom'
 const MobileNavigation = () => {
   return (
     <section className='lg:hidden h-16 bg-neutral-600 opacity-40 fixed bottom-0 w-full'>
-      <div className='flex items-center justify-between h-full'>
+      <div className='flex items-center justify-between h-full text-neutral-400'>
         {
             mobileNavigation.map((nav, index)=>{
                 return (
                     <NavLink key={nav.label+"mobilenavigation"}
-                             className={({isActive})=>`px-3 flex items-center flex-col justify-center`}
+                             to={nav.href}
+                             className={({isActive})=>`px-3 flex items-center flex-col justify-center ${isActive && "text-white"}`}
                     >
                         <div className='text-2xl'>
                             {nav.icon}

@@ -1,34 +1,14 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 
-const ProjectData = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
+const ProjectData = ({table_headers , table_data}) => {
 
-  useEffect(() => {
-    axios
-      .get("/sample.json")
-      .then((res) => {
-        console.log("Fetched data:", res.data);
-        setData(res.data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.log("Error to fetch data:", error);
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading) {
-    return <div>Loading...</div>; // Display loading state
-  }
   return (
     <div className="bg-light m-5 p-3" style={{ maxHeight: '400px', overflowY: 'auto', scrollbarWidth: 'thin', scrollbarColor: '#888 #ccc' }}>
      
       <table class="table table-bordered ">
-        <thead>
-          <tr>
-            {data.table_headers.map((header, i) => {
+          <thead >
+            <tr>
+            {table_headers.map((header, i) => {
               return <th key={i}>
                 <div className="d-flex justify-content-between">
                 {header.name}
@@ -37,9 +17,25 @@ const ProjectData = () => {
               </th>;
             })}
           </tr>
+          <tr>
+            {table_headers.map((headatatype,j)=>{
+              return(
+                
+                  <td key={j}>
+                  <div className="d-flex border p-1 justify-content-between">
+                  {headatatype.type}
+                  <i class="bi bi-chevron-down"></i>
+                  </div>
+
+                </td>
+                
+
+              )
+            })}
+          </tr>
         </thead>
         <tbody>
-          {data.table_data.map((row, rowindex) => {
+          {table_data.map((row, rowindex) => {
             return (
               <tr key={rowindex}>
                 {row.map((cell, cellindex) => {
@@ -50,6 +46,9 @@ const ProjectData = () => {
           })}
         </tbody>
       </table>
+      <div>
+       
+      </div>
     </div>
   );
 };

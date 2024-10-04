@@ -1,9 +1,17 @@
 body{
-  background-color: gray;
+  background-color: rgb(189, 185, 185); 
 }
 
+.wfl{
+  background-color: rgb(13, 13, 78);
+  
+  border-radius: 3px;
+  margin: 2px;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+}
 
-table {
-
-  width: 100%; /* Ensures the table takes up full width */
+.App{
+  display: flex;
+  
 }

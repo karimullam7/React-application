@@ -3,8 +3,8 @@ import React from "react";
 const ProjectData = ({table_headers , table_data}) => {
 
   return (
-    <div className="bg-light m-5 p-3" style={{ maxHeight: '400px', overflowY: 'auto', scrollbarWidth: 'thin', scrollbarColor: '#888 #ccc' }}>
-     
+    <div className="bg-light proj m-5 p-3" style={{ maxHeight: '400px',  overflowY: 'auto', scrollbarWidth: 'thin', scrollbarColor: '#888 #ccc' }} >
+      
       <table class="table table-bordered ">
           <thead >
             <tr>

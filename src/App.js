@@ -5,6 +5,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Workflow from './component/Workflow';
 
+
 function App() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -29,13 +30,16 @@ function App() {
 
 
   return (
-    <div className='App d-flex'>
-      <div>
+    <div className='App'>
+      <div  style={{width:"72%"}}>
         <Navbar/>
         <ProjectData table_headers={data.table_headers}  table_data={data.table_data}/>
       </div>
       <div >
         <Workflow workflow_steps={data.workflow_steps}/>
+      </div>
+      <div>
+       
       </div>
       
       

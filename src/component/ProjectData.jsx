@@ -1,36 +1,81 @@
 import React from "react";
 
-const ProjectData = ({table_headers , table_data}) => {
+const ProjectData = ({ data, table_headers, table_data }) => {
+  console.log(data);
 
   return (
-    <div className="bg-light proj m-5 p-3" style={{ maxHeight: '400px',  overflowY: 'auto', scrollbarWidth: 'thin', scrollbarColor: '#888 #ccc' }} >
-      
-      <table class="table table-bordered ">
-          <thead >
-            <tr>
-            {table_headers.map((header, i) => {
-              return <th key={i}>
-                <div className="d-flex justify-content-between">
-                {header.name}
-                <i class="bi bi-trash-fill"/>
+    <div
+      className="border rounded"
+      style={{
+        maxHeight: "400px",
+        overflowY: "auto",
+        scrollbarWidth: "thin",
+        scrollbarColor: "#888 #ccc",
+        backgroundColor:"azure"
+      }}
+    >
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' , margin:"10px", paddingTop:"10px" }} >
+        <div style={{ display: 'flex', justifyContent: 'space-between', gap: '20px' }}>
+          {Object.entries(data)
+            .filter(
+              ([key]) =>
+                key !== "created" && key !== "modified" && key !== "table_headers" && key !== "workflow_steps" && key !== "table_data" && key !== "id"
+            )
+            .slice(0, -1)
+            .map(([key, value]) => {
+              return (
+                <div className="d-flex p-1" key={key} style={{ textAlign: 'center' }}>
+                  <p className="border rounded pp ">{`${key}` }</p>
+                  <p>{`${value}`}</p>
                 </div>
-              </th>;
+              );
+            })}
+        </div>
+        <div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', gap: '20px'  }}>
+            {Object.entries(data)
+              .filter(
+                ([key]) =>
+                  key === "row_count"
+              )
+              .slice(-1)
+              .map(([key, value]) => {
+                return (
+                 <div className="d-flex textAlignCenter"  >
+                  <p className="border rounded" >{`${key}`}</p>
+                  <p>{`${value}`}</p>
+                 </div>
+                        
+                );
+              })}
+          </div>
+        </div>
+      </div>
+
+      <table className="table table-bordered ">
+        <thead className="pc">
+          <tr>
+            {table_headers.map((header, i) => {
+              return (
+                <th key={i}>
+                  <div className="d-flex  justify-content-between">
+                    {header.name}
+                    <i className="bi bi-trash-fill" />
+                  </div>
+                </th>
+              );
             })}
           </tr>
           <tr>
-            {table_headers.map((headatatype,j)=>{
-              return(
-                
-                  <td key={j}>
+            {table_headers.map((headatatype, j) => {
+              return (
+                <td key={j}>
                   <div className="d-flex border p-1 justify-content-between">
-                  {headatatype.type}
-                  <i class="bi bi-chevron-down"></i>
+                    {headatatype.type}
+                    <i className="bi bi-chevron-down"></i>
                   </div>
-
                 </td>
-                
-
-              )
+              );
             })}
           </tr>
         </thead>
@@ -46,9 +91,6 @@ const ProjectData = ({table_headers , table_data}) => {
           })}
         </tbody>
       </table>
-      <div>
-       
-      </div>
     </div>
   );
 };

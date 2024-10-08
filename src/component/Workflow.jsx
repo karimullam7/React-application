@@ -1,11 +1,15 @@
 import React from "react";
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Workflow = ({ workflow_steps }) => {
   return (
-    <div className=" border bg-white m-2 p-3">
-      <div className="d-flex justify-content-between align-items-center">
+    <div className=" border bg-white p-3">
+      <div className="d-flex justify-content-between align-items-center border">
         <div>
-          <h3>Workflow</h3>
+          <h5>Workflow</h5>
         </div>
         <div>
           <i className="bi bi-x-lg"></i>
@@ -15,21 +19,21 @@ const Workflow = ({ workflow_steps }) => {
         </div>
       </div>
 
-      <ul style={{ listStyle: "none" }}>
+      <ul style={{ listStyle: "none"  }}>
         {workflow_steps.map((workData) => {
           console.log(workData);
 
           return (
-            <div key={workData.id} className="d-flex gap-3 align-items-start">
-              <div>
-                <i class="bi bi-dash"></i>
-              </div>
-              <div className="border rounded ">
+            <div key={workData.id} className="d-flex gap-3  align-items-start">
+              
+              <div className="border rounded workdata ">
                 <div>
+                <Accordion>
+                  <AccordionSummary className="wd" expandIcon={<ExpandMoreIcon />} aria-controls="panel1-content" id="panel1-header">
                   <li className="wfl">{workData.name_title}</li>
-                </div>
-                <div>
-                {Object.entries(workData.params_extra).filter(([key, value]) =>  key !== "pipeline" && key !== "dataset2" && key !== "id" && value !== null ).map(([key, value]) => (
+                  </AccordionSummary>
+                  <AccordionDetails style={{backgroundColor:"azure"}}>
+                  {Object.entries(workData.params_extra).filter(([key, value]) =>  key !== "pipeline" && key !== "dataset2" && key !== "id" && value !== null ).map(([key, value]) => (
                   <li key={key}>
                   <strong>{key}:</strong> 
                   {typeof value === "object" && !Array.isArray(value)
@@ -41,6 +45,10 @@ const Workflow = ({ workflow_steps }) => {
                     : JSON.stringify(value, null, 2)}
                 </li>
                 ))}
+                  </AccordionDetails>
+                </Accordion>
+                </div>
+                <div>
                 </div>
               </div>
             </div>
